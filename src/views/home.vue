@@ -1,14 +1,16 @@
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-    <Card
-      v-for="p in pokemons"
-      :key="p.name"
-      :pokemon="p"
-    />
-  </div>
-  <div class="flex justify-center gap-4 p-6">
-    <button @click="beforePokemons" :disabled="offset === 0" class="bg-cyan-800 text-white rounded hover:bg-sky-950 px-4 py-2 lg:px-12 cursor-pointer hover:transition duration-300">Voltar</button>
-    <button @click="nextPokemons" class="bg-cyan-800 text-white rounded hover:bg-sky-950 px-4 py-2 lg:px-12 cursor-pointer hover:transition duration-300">Próximo</button>
+  <div class="px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <Card
+        v-for="p in pokemons"
+        :key="p.name"
+        :pokemon="p"
+      />
+    </div>
+    <div class="flex justify-center gap-4 p-6">
+      <button @click="beforePokemons" :disabled="offset === 0" class="bg-cyan-800 text-white rounded hover:bg-sky-950 px-4 py-2 lg:px-12 cursor-pointer hover:transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed">Voltar</button>
+      <button @click="nextPokemons" class="bg-cyan-800 text-white rounded hover:bg-sky-950 px-4 py-2 lg:px-12 cursor-pointer hover:transition duration-300">Próximo</button>
+    </div>
   </div>
 </template>
 
