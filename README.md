@@ -18,4 +18,4 @@ Uma aplicação criada como desafio para consumir a PokéAPI e construir uma Pok
    5. Abra o navegador e acesse: http://localhost:5173
 
 4. Deploy:
-    - (Em breve)
+    - [Acesse o projeto online aqui](https://pokedexdesafio-jet.vercel.app/)
