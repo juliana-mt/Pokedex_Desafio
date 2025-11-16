@@ -4,7 +4,7 @@
 
     <div v-if="loading" class="text-white text-lg">Carregando favoritos...</div>
 
-    <div v-else-if="pokemonList.length === 0" class="text-neutral-400 text-sm">
+    <div v-else-if="pokemonList.length === 0" class="text-neutral-400 min-h-screen text-sm">
         <p>Nenhum Pokémon foi favoritado ainda.</p> 
         <p>Favorite seus pokemons na tela <router-link to="/" class="underline hover:text-white hover:transition duration-300">Home</router-link></p>
     </div>
