@@ -87,7 +87,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import axios from 'axios'
-import Card from '../components/card.vue'
+import Card from '../components/Cardboard.vue'
 
 const allPokemons = ref([])
 const search = ref("")

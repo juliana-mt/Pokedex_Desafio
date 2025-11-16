@@ -79,7 +79,7 @@
 
 <script setup>
 import { ref, onMounted, computed } from "vue"
-import Card from "../components/Card.vue"
+import Card from "../components/Cardboard.vue"
 import axios from "axios"
 
 const FAVORITE_KEY = "favoritePokemons"
