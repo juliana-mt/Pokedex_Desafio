@@ -56,11 +56,11 @@
                 ></div>
               </div>
             </div>
-          <button
-            @click="toggleFavorite(selectedPokemon)"
-            class="mt-4 w-full bg-cyan-300 hover:bg-cyan-800 text-black font-bold px-4 py-2 rounded transition cursor-pointer">
-            {{ isFavorite ? "Remover dos favoritos" : "Favoritar" }}
-          </button>
+            <button
+              @click="toggleFavorite(selectedPokemon)"
+              class="mt-4 w-full bg-cyan-300 hover:bg-cyan-800 text-black font-bold px-4 py-2 rounded transition cursor-pointer">
+              {{ isFavorite ? "Remover dos favoritos" : "Favoritar" }}
+            </button>
           </div>
         </div>
       </div>
@@ -182,7 +182,6 @@ function closeModal() {
 
 function toggleFavorite(pokemon) {
   const saved = JSON.parse(localStorage.getItem(FAVORITE_KEY)) || []
-
   const exists = saved.includes(pokemon.id)
 
   let updated
